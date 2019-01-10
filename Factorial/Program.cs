@@ -11,10 +11,6 @@ namespace Factorial
     {
         static void Main(string[] args)
         {
-            //int x = 2000;
-            //Console.WriteLine("Factorial number: {0}", Factorial(x));
-            //Console.WriteLine("Result count: {0}", ReversFactorial(Factorial(x)));
-
             Console.WriteLine("Enter factorial namber: ");
             BigInteger number = BigInteger.Parse(Console.ReadLine());
 
@@ -37,17 +33,6 @@ namespace Factorial
             Console.ReadKey();
         }
 
-        static BigInteger Factorial(int x)
-        {
-            if (x == 0)
-            {
-                return 1;
-            }
-            else
-            {
-                return x * Factorial(x - 1);
-            }
-        }
 
         static int ReversFactorial(BigInteger factorial)
         {
